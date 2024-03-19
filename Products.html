@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Miguel Corporation | PRODUCTS</title>
+    <!--Link To Css-->
+    <link rel="stylesheet" href="style3.css">
+    <script defer src="activePage.js"></script>
+</head>
+<body>
+    <section class="sec">
+        <header>
+            <a href="index.html"><img src=images/SanMiguel.png class="logo"></a>
+            <div class="toggleMenu" onclick="menuToggle();"></div>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Products.html">Products</a></li>
+            </ul>
+        </header>
+            <div class="about">
+                <div class="about-text">
+                    <span>San Miguel Corporation</span>
+                    <h1>Discover Products</h1>
+                    <p>When it comes to beer in the Philippines, San Miguel Beer is the top-of-mind choice. Each bottle of San Miguel Beer served on the table is a product of over a century tradition of brewing excellence.<br><br>Responding to the evolving and growing demand of the Filipino beer drinker, San Miguel Brewery Inc. has always been keen on updating and further strengthening its product portfolio. In the past five years, the Company expanded its portfolio to include new brands that mirrors the demand in the market.</p>
+            </div>
+                <div class="about-img">
+            <img src="images/setbeer.png" alt="">
+                </div>
+    </section>
+    <!--Products-->
+    <section class="smb" id="smb">
+        <div class="heading">
+            <span>See</span>
+            <h1>Offered Products</h1>
+        </div>
+        <div class="smb-container">
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/beer001.png" alt="">
+                </div>
+                <div class="stars">
+                    <box-icon type='solid' name='star'></box-icon>
+                    <box-icon type='solid' name='star'></box-icon>
+                    <box-icon type='solid' name='star'></box-icon>
+                    <box-icon type='solid' name='star'></box-icon>
+                    <box-icon name='star-half' type='solid' ></box-icon>
+                </div>
+                <h2>SanMig Apple</h2>
+                <span>Php 52.70</span>
+                <a href="#" class="btn">Order Now</a>
+            </div>
+            
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/beer002.png" alt="">
+                </div>
+                <div class="stars">
+                    <box-icon type='solid' name='star'></box-icon>
+                    <box-icon type='solid' name='star'></box-icon>
+                    <box-icon type='solid' name='star'></box-icon>
+                    <box-icon type='solid' name='star'></box-icon>
+                    <box-icon name='star-half' type='solid' ></box-icon>
+                </div>
+                <h2>SanMig Lemon</h2>
+                <span>Php 52.70</span>
+                <a href="#" class="btn">Order Now</a>
+            </div>
+            
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/beer003.png" alt="">
+                </div>
+                <div class="stars">
+                    <box-icon type='solid' name='star'></box-icon>
+                    <box-icon type='solid' name='star'></box-icon>
+                    <box-icon type='solid' name='star'></box-icon>
+                    <box-icon type='solid' name='star'></box-icon>
+                    <box-icon name='star-half' type='solid' ></box-icon>
+                </div>
+                <h2>SanMig Lychee</h2>
+                <span>Php 52.70</span>
+                <a href="#" class="btn">Order Now</a>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.beer').src = anything;
+        }
+        function changeBgColor(color){
+            const sec = document.querySelector('.sec');
+            sec.style.background = color;
+        }
+        
+        function menuToggle(){
+            const toggleMenu = document.querySelector('.toggleMenu');
+            const navigation = document.querySelector('.navigation');
+            toggleMenu.classList.toggle('active')
+            navigation.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>

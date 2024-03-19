@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Miguel Corporation | ABOUT</title>
+    <!--Link To Css-->
+    <link rel="stylesheet" href="style2.css">
+    <script defer src="activePage.js"></script>
+</head>
+<body>
+    <section class="sec">
+        <header>
+            <a href="index.html"><img src=images/SanMiguel.png class="logo"></a>
+            <div class="toggleMenu" onclick="menuToggle();"></div>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Products.html">Products</a></li>
+            </ul>
+        </header>
+            <div class="about">
+                <div class="about-text">
+                    <span>Who we are</span>
+                    <h1>Corporation Profile</h1>
+            </div>
+                <div class="about-img">
+            <img src="https://www.reuters.com/resizer/JyididYbqYmouy1Cp5NT9sVtgFw=/960x0/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/XJT2XMFRQFISXBADENFPRJIZFY.jpg" width="600" height="400" alt="">
+                </div>
+    </section>
+    <!--About-->
+    <section class="about" id="about">
+        <div class="heading">
+            <span>Our Company</span>
+            <h1>San Miguel Corporation</h1>
+        </div>
+        <div class="container">
+            <div class="about-img">
+                <img src="https://www.sanmiguelbrewery.com.ph/photos/6/aboutus-widget1.jpg" alt="">
+            </div>
+            <div class="about-text">
+                <h2>Get to know more about us</h2>
+                <p>San Miguel Brewery Inc. (SMB) is the largest producer of beer in the Philippines, with nine out of ten beer drinkers preferring its brands. San Miguel Beer was first produced by La Fabrica de Cerveza de San Miguel, an upstart brewery in the heart of Manila that began its operations in 1890. It received the Royal Grant from the Spanish king to brew beer in the Philippines, then a colony of Spain. In 1963, the brewery was renamed San Miguel Corp. (SMC) to reflect its growing ventures into food and packaging. As the beer business grew at a steady pace, it provided the foundation from which SMC expanded its interests from food, beverage and packaging, to power, oil, airline and infrastructure. Today, SMC is the country's biggest diversified conglomerate.</p>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.beer').src = anything;
+        }
+        function changeBgColor(color){
+            const sec = document.querySelector('.sec');
+            sec.style.background = color;
+        }
+        
+        function menuToggle(){
+            const toggleMenu = document.querySelector('.toggleMenu');
+            const navigation = document.querySelector('.navigation');
+            toggleMenu.classList.toggle('active')
+            navigation.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>

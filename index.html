@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index.html</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="activePage.js"></script>
+</head>
+<body>
+    <section class="sec">
+        <header>
+            <a href="index.html"><img src=images/SanMiguel.png class="logo"></a>
+            <div class="toggleMenu" onclick="menuToggle();"></div>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Products.html">Products</a></li>
+            </ul>
+        </header>
+            <div class="content">
+                <div class="textBox">
+                    <h2>Sustaining the<br><span>Filipino</span></h2>
+                    <p>San Miguel Corporation’s greatest sustainable resource is malasakit—that uniquely Filipino value of helping others without being prodded and without expecting anything in return. Malasakit is both actionable and sustainable.<br><br>
+                    (This website is for educational purposes only)</p>
+                    <a href="Products.html">View All Products</a>
+                </div>
+                <div class="imgBox">
+                    <img src="images/beer001.png" width="220px" height="420px" class="beer">
+                </div>
+            </div>
+        <ul class="thumb">
+            <li><img src="images/beer001.png" onclick="imgSlider('images/beer001.png');changeBgColor('#8b0000')"></li>
+            <li><img src="images/beer002.png" onclick="imgSlider(images/beer002.png');changeBgColor('#e6cc00')"></li>
+            <li><img src="images/beer003.png" onclick="imgSlider('images/beer003.png');changeBgColor('#d0637c')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="https://www.facebook.com/officialsanmiguelcorp/"><img src="images/facebook.png"></a></li>
+            <li><a href="https://twitter.com/smc_offical?lang=en"><img src="images/twitter.png"></a></li>
+            <li><a href="https://www.instagram.com/officialsanmiguelcorp/?hl=en"><img src="images/instagram.png"></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.beer').src = anything;
+        }
+        function changeBgColor(color){
+            const sec = document.querySelector('.sec');
+            sec.style.background = color;
+        }
+        
+        function menuToggle(){
+            const toggleMenu = document.querySelector('.toggleMenu');
+            const navigation = document.querySelector('.navigation');
+            toggleMenu.classList.toggle('active')
+            navigation.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
